@@ -1,6 +1,6 @@
 # Haoxuan Cheng's academic website
 
-A small, dependency-free academic website for `https://coker412.github.io/`.
+A small, dependency-free academic website with a blue color palette for `https://coker412.github.io/`. It includes a bilingual profile, all six public arXiv preprints, recent talks, and the public Graph Geometry Research Workspace.
 
 ## Preview locally
 

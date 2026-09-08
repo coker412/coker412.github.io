@@ -1,12 +1,12 @@
 :root {
-  --paper: #f4f0e8;
-  --paper-deep: #e9e2d5;
-  --ink: #15211f;
-  --muted: #63706c;
-  --green: #183b36;
-  --green-light: #dce5df;
-  --rust: #c6563d;
-  --line: rgba(21, 33, 31, 0.16);
+  --paper: #f5f8fd;
+  --paper-deep: #e4ecf8;
+  --ink: #14243e;
+  --muted: #56677e;
+  --blue: #173d78;
+  --blue-light: #dde9fb;
+  --accent: #245fbd;
+  --line: rgba(20, 36, 62, 0.16);
   --display: Georgia, "Times New Roman", "Noto Serif CJK SC", "Songti SC", serif;
   --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
   --max: 1240px;
@@ -24,7 +24,7 @@ body {
   margin: 0;
   color: var(--ink);
   background:
-    radial-gradient(circle at 84% 5%, rgba(198, 86, 61, 0.08), transparent 27rem),
+    radial-gradient(circle at 84% 5%, rgba(36, 95, 189, 0.08), transparent 27rem),
     var(--paper);
   font-family: var(--sans);
   line-height: 1.6;
@@ -42,7 +42,7 @@ a {
 
 ::selection {
   color: var(--paper);
-  background: var(--rust);
+  background: var(--accent);
 }
 
 .skip-link {
@@ -52,7 +52,7 @@ a {
   z-index: 100;
   padding: 0.65rem 0.9rem;
   color: white;
-  background: var(--green);
+  background: var(--blue);
   transform: translateY(-160%);
   transition: transform 160ms ease;
 }
@@ -121,7 +121,7 @@ a {
   left: 0;
   height: 1px;
   content: "";
-  background: var(--rust);
+  background: var(--accent);
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 180ms ease;
@@ -143,7 +143,7 @@ a {
 }
 
 .language-option.is-active {
-  color: var(--rust);
+  color: var(--accent);
 }
 
 .hero {
@@ -158,7 +158,7 @@ a {
 
 .eyebrow {
   margin: 0 0 1.35rem;
-  color: var(--rust);
+  color: var(--accent);
   font-size: 0.73rem;
   font-weight: 700;
   letter-spacing: 0.15em;
@@ -183,7 +183,7 @@ a {
 }
 
 .accent-dot {
-  color: var(--rust);
+  color: var(--accent);
 }
 
 .hero-cn {
@@ -215,7 +215,7 @@ a {
   justify-content: space-between;
   min-width: 10.4rem;
   padding: 0.85rem 1.1rem;
-  border: 1px solid var(--green);
+  border: 1px solid var(--blue);
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.025em;
@@ -230,18 +230,18 @@ a {
 
 .button-primary {
   color: var(--paper);
-  background: var(--green);
+  background: var(--blue);
 }
 
 .button-primary:hover,
 .button-primary:focus-visible {
-  background: #24534b;
+  background: #2456a0;
 }
 
 .button-secondary:hover,
 .button-secondary:focus-visible {
   color: var(--paper);
-  background: var(--green);
+  background: var(--blue);
 }
 
 .hero-figure {
@@ -257,7 +257,7 @@ a {
 
 .orbit {
   fill: none;
-  stroke: rgba(21, 33, 31, 0.13);
+  stroke: rgba(20, 36, 62, 0.13);
   stroke-width: 1;
   stroke-dasharray: 3 8;
 }
@@ -284,29 +284,29 @@ a {
 }
 
 .curve-b {
-  stroke: rgba(198, 86, 61, 0.23);
+  stroke: rgba(36, 95, 189, 0.23);
   stroke-width: 1;
 }
 
 .graph-lines line {
-  stroke: rgba(24, 59, 54, 0.33);
+  stroke: rgba(23, 61, 120, 0.33);
   stroke-width: 1.2;
 }
 
 .graph-nodes circle {
   fill: var(--paper);
-  stroke: var(--green);
+  stroke: var(--blue);
   stroke-width: 1.5;
 }
 
 .graph-nodes circle:nth-child(3),
 .graph-nodes circle:nth-child(6) {
-  fill: var(--rust);
-  stroke: var(--rust);
+  fill: var(--accent);
+  stroke: var(--accent);
 }
 
 .geometry text {
-  fill: var(--green);
+  fill: var(--blue);
   font-family: var(--display);
   font-size: 35px;
   font-style: italic;
@@ -345,7 +345,7 @@ a {
 }
 
 .section-label span:first-child {
-  color: var(--rust);
+  color: var(--accent);
 }
 
 .section-title {
@@ -372,7 +372,7 @@ a {
 
 .about-copy > p {
   margin: 0 0 1.35rem;
-  color: #36423f;
+  color: #34465f;
   font-family: var(--display);
   font-size: clamp(1.08rem, 1.5vw, 1.3rem);
   line-height: 1.62;
@@ -391,9 +391,37 @@ a {
   padding: 0.44rem 0.72rem;
   border: 1px solid var(--line);
   border-radius: 999px;
-  color: var(--green);
+  color: var(--blue);
   font-size: 0.74rem;
   font-weight: 650;
+}
+
+.profile-facts {
+  margin: 2.4rem 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.profile-facts > div {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 1rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.profile-facts dt {
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.profile-facts dd {
+  margin: 0;
+  color: #445671;
+  font-size: 0.8rem;
+  line-height: 1.5;
 }
 
 .section-heading {
@@ -409,16 +437,16 @@ a {
   align-items: center;
   gap: 0.5rem;
   width: max-content;
-  color: var(--green);
+  color: var(--blue);
   font-size: 0.78rem;
   font-weight: 700;
-  text-decoration-color: rgba(24, 59, 54, 0.35);
+  text-decoration-color: rgba(23, 61, 120, 0.35);
   text-underline-offset: 0.3rem;
 }
 
 .text-link:hover,
 .text-link:focus-visible {
-  color: var(--rust);
+  color: var(--accent);
 }
 
 .paper-list {
@@ -451,7 +479,7 @@ a {
 
 .paper-index {
   padding-top: 0.25rem;
-  color: var(--rust);
+  color: var(--accent);
   font-family: var(--display);
   font-size: 0.8rem;
 }
@@ -472,7 +500,7 @@ a {
 
 .paper-authors {
   margin: 0.8rem 0 0;
-  color: #47534f;
+  color: #445671;
   font-size: 0.84rem;
 }
 
@@ -495,14 +523,115 @@ a {
 .paper-links a {
   font-size: 0.74rem;
   font-weight: 700;
-  text-decoration-color: rgba(21, 33, 31, 0.25);
+  text-decoration-color: rgba(20, 36, 62, 0.25);
   text-underline-offset: 0.22rem;
 }
 
 .paper-links a:hover,
 .paper-links a:focus-visible {
-  color: var(--rust);
+  color: var(--accent);
 }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: minmax(18rem, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(4rem, 10vw, 10rem);
+  align-items: start;
+}
+
+.projects-intro {
+  max-width: 32rem;
+  margin: 1.7rem 0 0;
+  color: var(--muted);
+  font-family: var(--display);
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.project-card {
+  position: relative;
+  padding: clamp(2rem, 5vw, 4rem);
+  overflow: hidden;
+  color: var(--paper);
+  background: var(--blue);
+}
+
+.project-card .paper-meta {
+  position: relative;
+  z-index: 1;
+  color: #9fcaff;
+}
+
+.project-card h3 {
+  position: relative;
+  z-index: 1;
+  max-width: 30rem;
+  margin: 1rem 0 0;
+  font-family: var(--display);
+  font-size: clamp(2rem, 4vw, 3.8rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 1.04;
+}
+
+.project-card > p:not(.paper-meta) {
+  position: relative;
+  z-index: 1;
+  max-width: 35rem;
+  margin: 1.6rem 0 2.4rem;
+  color: rgba(245, 248, 253, 0.76);
+  font-size: 0.9rem;
+  line-height: 1.72;
+}
+
+.project-card .button-secondary {
+  position: relative;
+  z-index: 1;
+  color: var(--paper);
+  border-color: rgba(245, 248, 253, 0.55);
+}
+
+.project-card .button-secondary:hover,
+.project-card .button-secondary:focus-visible {
+  color: var(--blue);
+  background: var(--paper);
+}
+
+.project-mark {
+  position: absolute;
+  top: -4rem;
+  right: -4rem;
+  width: 20rem;
+  height: 20rem;
+  opacity: 0.15;
+}
+
+.project-mark::before,
+.project-mark::after {
+  position: absolute;
+  inset: 2rem;
+  content: "";
+  border: 1px solid var(--paper);
+  border-radius: 50%;
+}
+
+.project-mark::after {
+  inset: 5.5rem;
+}
+
+.project-mark span {
+  position: absolute;
+  width: 0.65rem;
+  height: 0.65rem;
+  background: var(--paper);
+  border-radius: 50%;
+}
+
+.project-mark span:nth-child(1) { top: 2rem; left: 9.7rem; }
+.project-mark span:nth-child(2) { top: 7rem; left: 3rem; }
+.project-mark span:nth-child(3) { top: 9.7rem; left: 9.7rem; background: #9fcaff; }
+.project-mark span:nth-child(4) { right: 2.6rem; bottom: 6rem; }
+.project-mark span:nth-child(5) { bottom: 2rem; left: 8rem; }
 
 .talks-grid {
   display: grid;
@@ -523,7 +652,7 @@ a {
 }
 
 .talk time {
-  color: var(--rust);
+  color: var(--accent);
   font-family: var(--display);
   font-size: 0.86rem;
 }
@@ -544,7 +673,7 @@ a {
 
 .contact {
   color: var(--paper);
-  background: var(--green);
+  background: var(--blue);
 }
 
 .contact-inner {
@@ -554,7 +683,7 @@ a {
 }
 
 .contact .eyebrow {
-  color: #eba28f;
+  color: #9fcaff;
 }
 
 .contact h2 {
@@ -572,13 +701,13 @@ a {
   margin-top: 3.6rem;
   font-family: var(--display);
   font-size: clamp(1.15rem, 3vw, 2rem);
-  text-decoration-color: rgba(244, 240, 232, 0.42);
+  text-decoration-color: rgba(245, 248, 253, 0.42);
   text-underline-offset: 0.42rem;
 }
 
 .contact-email:hover,
 .contact-email:focus-visible {
-  color: #f2a38e;
+  color: #b6d9ff;
 }
 
 .contact-links {
@@ -589,7 +718,7 @@ a {
 }
 
 .contact-links a {
-  color: rgba(244, 240, 232, 0.72);
+  color: rgba(245, 248, 253, 0.72);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -608,7 +737,7 @@ a {
   justify-content: space-between;
   padding: 1.5rem max(1.5rem, calc((100vw - var(--max)) / 2));
   color: var(--paper);
-  background: #102d29;
+  background: #10294f;
   font-size: 0.7rem;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -647,7 +776,12 @@ a {
   }
 
   .site-nav {
-    display: none;
+    display: flex;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    flex-wrap: wrap;
+    gap: 0.8rem 1.3rem;
+    padding-top: 1.25rem;
   }
 
   .hero {
@@ -662,6 +796,7 @@ a {
   }
 
   .about-grid,
+  .projects-grid,
   .talks-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -771,3 +906,9 @@ a {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Blue accents and a compact overview of the preprint list. */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+.hero h1, .section-title, .paper h3 { color: var(--blue); }
+.papers-intro { max-width: 48rem; margin: -1.5rem 0 2.8rem; color: var(--muted); font-size: 0.95rem; }
+.paper-links a { color: var(--blue); }
