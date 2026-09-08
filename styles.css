@@ -24,6 +24,7 @@ body {
   margin: 0;
   color: var(--ink);
   background:
+    radial-gradient(circle at 84% 5%, rgba(36, 95, 189, 0.08), transparent 27rem),
     var(--paper);
   font-family: var(--sans);
   line-height: 1.6;
@@ -69,11 +70,7 @@ a {
   width: min(calc(100% - 3rem), var(--max));
   margin: 0 auto;
   padding: 1.65rem 0;
-  color: #f5f8fd;
-  background: #123f97;
-  box-shadow: 0 0 0 100vmax #123f97;
-  clip-path: inset(0 -100vmax);
-  border-bottom: 1px solid rgba(193, 218, 255, 0.3);
+  border-bottom: 1px solid var(--line);
 }
 
 .wordmark {
@@ -93,7 +90,7 @@ a {
   width: 2.25rem;
   height: 2.25rem;
   place-items: center;
-  border: 1px solid #a8ceff;
+  border: 1px solid var(--ink);
   border-radius: 50%;
   font-family: var(--display);
   font-size: 0.72rem;
@@ -139,20 +136,17 @@ a {
 .language-toggle {
   justify-self: end;
   padding: 0.45rem 0;
-  color: #bed8ff;
+  color: var(--muted);
   background: transparent;
   border: 0;
   cursor: pointer;
 }
 
 .language-option.is-active {
-  color: #ffffff;
+  color: var(--accent);
 }
 
 .hero {
-  position: relative;
-  isolation: isolate;
-  color: #f5f8fd;
   display: grid;
   grid-template-columns: minmax(0, 1.03fr) minmax(24rem, 0.97fr);
   align-items: center;
@@ -161,24 +155,6 @@ a {
   margin: 0 auto;
   padding: 5.5rem 0 6.5rem;
 }
-
-.hero::before {
-  position: absolute;
-  z-index: -1;
-  inset: 0 calc((100% - 100vw) / 2);
-  content: "";
-  background: radial-gradient(ellipse at 82% 55%, #2269d4 0%, transparent 62%),
-    linear-gradient(160deg, #123f97 8%, #164eaf 58%, #123a88 100%);
-}
-
-.hero .eyebrow, .hero-cn, .figure-note { color: #c3ddff; }
-.hero .accent-dot { color: #8bcaff; }
-.hero .button-primary { color: #123f97; background: #f5f8fd; border-color: #f5f8fd; }
-.hero .button-primary:hover, .hero .button-primary:focus-visible { background: #cbe4ff; }
-.hero .button-secondary { color: #ffffff; border-color: #a8ceff; background: transparent; }
-.hero .button-secondary:hover, .hero .button-secondary:focus-visible { background: #245fbd; }
-.hero :focus-visible, .site-header :focus-visible { outline-color: #b8dcff; }
-.site-nav a::after { background: #b8dcff; }
 
 .eyebrow {
   margin: 0 0 1.35rem;
@@ -212,7 +188,7 @@ a {
 
 .hero-cn {
   margin: 1.7rem 0 0 clamp(1.8rem, 5vw, 5.4rem);
-  color: #c3ddff;
+  color: var(--muted);
   font-family: var(--display);
   font-size: 1.05rem;
   letter-spacing: 0.42em;
@@ -281,7 +257,7 @@ a {
 
 .orbit {
   fill: none;
-  stroke: rgba(193, 218, 255, 0.38);
+  stroke: rgba(20, 36, 62, 0.13);
   stroke-width: 1;
   stroke-dasharray: 3 8;
 }
@@ -308,29 +284,29 @@ a {
 }
 
 .curve-b {
-  stroke: rgba(169, 211, 255, 0.62);
+  stroke: rgba(36, 95, 189, 0.23);
   stroke-width: 1;
 }
 
 .graph-lines line {
-  stroke: rgba(207, 230, 255, 0.7);
+  stroke: rgba(23, 61, 120, 0.33);
   stroke-width: 1.2;
 }
 
 .graph-nodes circle {
-  fill: #1c58b9;
-  stroke: #c4e2ff;
+  fill: var(--paper);
+  stroke: var(--blue);
   stroke-width: 1.5;
 }
 
 .graph-nodes circle:nth-child(3),
 .graph-nodes circle:nth-child(6) {
-  fill: #9bd7ff;
-  stroke: #e0f3ff;
+  fill: var(--accent);
+  stroke: var(--accent);
 }
 
 .geometry text {
-  fill: #d7ebff;
+  fill: var(--blue);
   font-family: var(--display);
   font-size: 35px;
   font-style: italic;
@@ -341,7 +317,7 @@ a {
   right: 8%;
   bottom: 11%;
   margin: 0;
-  color: #c3ddff;
+  color: var(--muted);
   font-size: 0.66rem;
   font-weight: 700;
   letter-spacing: 0.2em;
@@ -933,7 +909,6 @@ a {
 
 /* Blue accents and a compact overview of the preprint list. */
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
-.hero h1 { color: #ffffff; }
-.section-title, .paper h3 { color: var(--blue); }
+.hero h1, .section-title, .paper h3 { color: var(--blue); }
 .papers-intro { max-width: 48rem; margin: -1.5rem 0 2.8rem; color: var(--muted); font-size: 0.95rem; }
 .paper-links a { color: var(--blue); }
