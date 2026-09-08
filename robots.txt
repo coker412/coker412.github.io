@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://coker412.github.io/sitemap.xml
