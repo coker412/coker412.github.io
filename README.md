@@ -14,7 +14,7 @@ Then open `http://localhost:8000`.
 
 ## Publish with GitHub Pages
 
-Create a public repository named `coker412.github.io`, put these files in its root, and push to the default branch. In the repository settings, choose **Settings → Pages → Deploy from a branch**, then select the default branch and `/ (root)`.
+The public repository is `coker412/coker412.github.io`. GitHub Pages publishes the root of `main` automatically after a push. Check the **pages build and deployment** workflow before verifying the live page at `https://coker412.github.io/`.
 
 The site uses no external fonts, scripts, or content delivery networks. Paper and conference links point to their public source pages.
 
