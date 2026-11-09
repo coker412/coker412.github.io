@@ -80,6 +80,7 @@ p { text-wrap: pretty; }
 .paper-links a { display: inline-flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 44px; font-size: 13px; }
 .projects-grid, .talks-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.72fr); gap: 64px; }
 .projects-intro { max-width: 32em; margin: 16px 0 0; color: var(--muted); font-size: 15px; }
+.project-list { display: grid; gap: 24px; min-width: 0; }
 .project-card { padding: 28px 32px; background: #e8eff9; border-radius: 4px; }
 .project-card h3 { margin: 0 0 12px; font: 400 28px/1.25 var(--display); letter-spacing: -.02em; }
 .project-card > p:not(.paper-meta) { margin: 20px 0 12px; font-size: 15px; }
@@ -137,6 +138,8 @@ html:lang(zh-CN) .section-title, html:lang(zh-CN) .contact h2 { line-height: 1.4
   .paper-links { grid-column: 2; flex-direction: row; gap: 24px; }
   .paper-links a { gap: 8px; }
   .project-card { margin-top: 24px; padding: 24px; }
+  .project-list .project-card { margin-top: 0; }
+  .project-list { margin-top: 24px; }
   .timeline { margin-top: 28px; }
   .talk { grid-template-columns: 1fr; gap: 8px; }
   .contact-inner { padding-block: 36px; }

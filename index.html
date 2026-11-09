@@ -112,11 +112,13 @@
             <li data-en="Ricci curvature on graphs" data-zh="图上的 Ricci 曲率">Ricci curvature on graphs</li>
             <li data-en="Spectral graph theory" data-zh="谱图理论">Spectral graph theory</li>
             <li data-en="Geometric analysis" data-zh="几何分析">Geometric analysis</li>
+            <li data-en="AI-assisted mathematics" data-zh="AI 辅助数学研究">AI-assisted mathematics</li>
           </ul>
         </div>
         <div class="about-copy">
           <p data-en="I joined the direct-entry PhD program in mathematics at Fudan University in 2025. Before joining Fudan, I studied mathematics at South China Normal University." data-zh="我是复旦大学数学专业 2025 级直博研究生，此前在华南师范大学学习数学。">I joined the direct-entry PhD program in mathematics at Fudan University in 2025. Before joining Fudan, I studied mathematics at South China Normal University.</p>
           <p data-en="My main area is discrete geometric analysis, especially geometric structures on graphs, discrete curvature, and spectral questions related to discrete Einstein metrics. I also work on geometric analysis on manifolds, including volume growth, stochastic processes, and curvature flows." data-zh="我主要从事离散几何分析研究，尤其关注图上的几何结构、离散曲率，以及离散 Einstein 度量中的谱问题。我也研究流形上的几何分析，包括体积增长、随机过程与曲率流。">My main area is discrete geometric analysis, especially geometric structures on graphs, discrete curvature, and spectral questions related to discrete Einstein metrics. I also work on geometric analysis on manifolds, including volume growth, stochastic processes, and curvature flows.</p>
+          <p data-en="I also develop AI-assisted tools for mathematical research, writing, and understanding proofs. My applied projects include machine learning for medical images and ECG signals, and LLM-assisted forecasting." data-zh="我也开发 AI 辅助工具，探索数学研究、文章写作与证明理解，并参与医学图像、心电信号的机器学习及大模型辅助预测项目。">I also develop AI-assisted tools for mathematical research, writing, and understanding proofs. My applied projects include machine learning for medical images and ECG signals, and LLM-assisted forecasting.</p>
         </div>
           <dl class="profile-facts">
             <div>
@@ -292,18 +294,36 @@
     <section class="section projects" id="projects" aria-labelledby="projects-title">
       <div class="projects-grid">
         <div>
-          <h2 id="projects-title" class="section-title" data-en="Research tools" data-zh="研究工具">Research tools</h2>
-          <p class="projects-intro" data-en="I build small systems to make long mathematical projects easier to resume, inspect, and verify." data-zh="我也开发研究工具，让长期数学项目更容易恢复、检查和验证。">I build small systems to make long mathematical projects easier to resume, inspect, and verify.</p>
+          <h2 id="projects-title" class="section-title" data-en="AI & machine learning projects" data-zh="AI 与机器学习项目">AI &amp; machine learning projects</h2>
+          <p class="projects-intro" data-en="Tools for mathematical research and learning, alongside applications in medical imaging, biomedical signals, and forecasting." data-zh="面向数学研究与学习的工具，以及医学图像、生物医学信号和预测任务中的应用。">Tools for mathematical research and learning, alongside applications in medical imaging, biomedical signals, and forecasting.</p>
         </div>
+        <div class="project-list">
         <article class="project-card">
           <h3>Graph Geometry Research Workspace</h3>
-          <p class="paper-meta" data-en="Open source · research infrastructure" data-zh="开源 · 研究基础设施">Open source · research infrastructure</p>
+          <p class="paper-meta" data-en="Aug 2026–present · open source · AI4M" data-zh="2026.08 至今 · 开源 · AI4M">Aug 2026–present · open source · AI4M</p>
           <p data-en="I built this workbench to organize research in discrete geometry and geometric analysis with Codex. It keeps track of proof attempts, dependencies, and computational evidence so that I can resume a problem without losing its history. The public repository shares the framework and project templates." data-zh="我开发这个工作台，用 Codex 辅助组织离散几何与几何分析研究。它记录证明尝试、依赖关系和计算证据，让长期问题可以接续推进。公开仓库提供工作台框架与项目模板。">I built this workbench to organize research in discrete geometry and geometric analysis with Codex. It keeps track of proof attempts, dependencies, and computational evidence so that I can resume a problem without losing its history. The public repository shares the framework and project templates.</p>
+          <p data-en="I am also exploring how AI can improve the structure and exposition of mathematical papers and help readers understand definitions, ideas, and proofs." data-zh="我最近也在探索如何用 AI 改善数学文章的结构与表达，并帮助读者理解定义、思路和证明。">I am also exploring how AI can improve the structure and exposition of mathematical papers and help readers understand definitions, ideas, and proofs.</p>
           <a class="button button-secondary" href="https://github.com/coker412/graph-geometry-research-workspace" target="_blank" rel="noopener noreferrer">
             <span data-en="View repository" data-zh="查看仓库">View repository</span>
             <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>
           </a>
         </article>
+        <article class="project-card">
+          <h3 data-en="OCT foveal layer localization" data-zh="OCT 中心凹外核层定位与厚度测量">OCT foveal layer localization</h3>
+          <p class="paper-meta" data-en="2026 · medical imaging · patent application pending" data-zh="2026 · 医学图像 · 专利申请中">2026 · medical imaging · patent application pending</p>
+          <p data-en="As the second inventor, I designed a keypoint detection and boundary-refinement method for locating the outer nuclear layer and measuring its thickness. With model weights fixed, refinement reduced upper-boundary vertical MAE from 0.826 to 0.331 pixels on 119 manually annotated validation images." data-zh="作为第二发明人，我设计关键点检测与边界精修方法，定位外核层并测量厚度。在 119 张人工标注验证图像上固定模型权重后，精修使上边界纵向平均绝对误差从 0.826 降至 0.331 像素。">As the second inventor, I designed a keypoint detection and boundary-refinement method for locating the outer nuclear layer and measuring its thickness. With model weights fixed, refinement reduced upper-boundary vertical MAE from 0.826 to 0.331 pixels on 119 manually annotated validation images.</p>
+        </article>
+        <article class="project-card">
+          <h3 data-en="LLM-assisted dividend forecasting" data-zh="大模型辅助股息预测">LLM-assisted dividend forecasting</h3>
+          <p class="paper-meta" data-en="2026 · commissioned technical collaboration" data-zh="2026 · 受个人委托的技术协作">2026 · commissioned technical collaboration</p>
+          <p data-en="I developed a LangGraph workflow that extracts evidence-linked hypotheses from earnings call transcripts and combines them with rule-based, Holt exponential smoothing, and ridge-regression baselines. I worked with business analysts on evaluation across 50 companies, case analysis, and iterative improvements." data-zh="我开发 LangGraph 工作流，从财报电话会议文字稿提取带证据的大模型假设，结合规则、Holt 指数平滑与岭回归基线预测股息，并与业务分析师协作完成 50 家公司的评测、案例分析和方案迭代。">I developed a LangGraph workflow that extracts evidence-linked hypotheses from earnings call transcripts and combines them with rule-based, Holt exponential smoothing, and ridge-regression baselines. I worked with business analysts on evaluation across 50 companies, case analysis, and iterative improvements.</p>
+        </article>
+        <article class="project-card">
+          <h3 data-en="Transfer learning for atrial fibrillation recognition" data-zh="基于迁移学习的房颤识别">Transfer learning for atrial fibrillation recognition</h3>
+          <p class="paper-meta" data-en="Mar 2023–Apr 2024 · ECG signal analysis" data-zh="2023.03–2024.04 · 心电信号分析">Mar 2023–Apr 2024 · ECG signal analysis</p>
+          <p data-en="The project used convolutional networks and transfer learning to adapt single-lead ECG recognition to dual-lead signals using the MIT-BIH database. My contributions were wavelet-based ECG preprocessing and preparation of the research report." data-zh="项目基于 MIT-BIH 数据库，结合卷积神经网络和迁移学习，将单导联心电识别迁移到双导联信号。我的贡献是基于小波变换的心电数据预处理与研究报告撰写。">The project used convolutional networks and transfer learning to adapt single-lead ECG recognition to dual-lead signals using the MIT-BIH database. My contributions were wavelet-based ECG preprocessing and preparation of the research report.</p>
+        </article>
+        </div>
       </div>
     </section>
 

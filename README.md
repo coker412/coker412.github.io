@@ -1,6 +1,6 @@
 # Haoxuan Cheng's academic website
 
-A small, dependency-free academic website with a blue color palette for `https://coker412.github.io/`. It includes a bilingual profile, ten public arXiv preprints (checked 6 October 2026), talks and poster presentations, a downloadable academic CV, and the public Graph Geometry Research Workspace.
+A small, dependency-free academic website with a blue color palette for `https://coker412.github.io/`. It includes a bilingual profile, ten public arXiv preprints (checked 6 October 2026), talks and poster presentations, a downloadable academic CV, and AI and machine learning projects. The project descriptions and CV were supplemented from the current internship resumes on 9 November 2026, including the public Graph Geometry Research Workspace, OCT imaging, dividend forecasting, and ECG transfer learning.
 
 ## Preview locally
 
